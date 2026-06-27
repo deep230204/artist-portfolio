@@ -1,10 +1,11 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
 function App() {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-yellow-400">
-        Tailwind Working 🚀
-      </h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
 
