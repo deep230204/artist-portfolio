@@ -7,12 +7,19 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 z-50 w-full">
       <Container>
-        <nav className="flex h-20 items-center justify-between">
+        <nav className="flex h-24 items-center justify-between">
+
+          {/* Logo */}
           <Logo />
 
+          {/* Desktop Navigation */}
           <NavLinks />
 
-          <Button>Book Show</Button>
+          {/* CTA */}
+          <div className="hidden lg:block">
+            <Button>Book Show</Button>
+          </div>
+
         </nav>
       </Container>
     </header>
